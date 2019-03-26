@@ -79,7 +79,7 @@ Some JavaScript code
 ```
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
-//sample comment
+//sample comment,
 two dashes need to be there before putting in a comment
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
@@ -124,30 +124,37 @@ function handleClick(){
 ```js
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
-This is happening with the function handleClick() that has an alert that says "hello". This function is assigned to a button that is displayed as "wow" to the user. So when the "Wow" button is clicked, it will display an alert that shows "hello".
+This is happening with the function handleClick() that has an alert that says "hello". This function is assigned to a button that is displayed as "wow" to the user. So when the "Wow" button is clicked, it will display an alert as a text box that shows "hello".
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
-Added code for this button 
+Added code for this button: lines 37-39, 80
 
 
 ### The next few questions address the `jquerylib_submit_example.html` file.
 
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
+
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
+The error is in red because the style specifies that errors should be in red and valid inputs should be in blue. This can be seen in lines 7-13 in the html file.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+That line assigns a regular expression that helps match any string with one or more letters. I Googled "var regex = /^[a-zA-Z]+$/ javascript". I learned that regular expressions can help find and match the sequence defined in text. The regular expression can be defined to match numerous combinations of numbers, letters, other characters, etc. The beginning and end of the sequence its finding can also be specified.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
+The conditional statements in Javascript uses curly braces to specify the beginning and end of the indented part specifies the actions inside the conditional statement. Where Python uses indents to specify what is inside the conditional. The condition that checks if the conditional statement is True or False is housed in between parenthesis in both JavaScript and Python.
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+The 10000 refers to the speed at which the text fades out in milliseconds.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
+The code seems to be setting up the javascript code that is to follow. It makes the document ready so that it can be manipulated. The submit method is what happens when the user submits the form. In this case, it is using a regular expression to check if the user is entering all text that is in one word. If the entry is not in this format, it will show "Not valid!" in red and will not submit the form. Otherwise, if the entry is correct, it will show "Nice!" in blue.
 
 ```js
 $(document).ready(function(){
     $("form").submit(function(event){
 ```
+
 
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
