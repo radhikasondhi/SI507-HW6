@@ -83,7 +83,7 @@ Some JavaScript code
 two dashes need to be there before putting in a comment
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
-You need a script tag (open and close), curly brackets around functions
+You need a script tag (open and close), curly brackets around functions, semicolons
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 Console and alert; an alert function pops up on page so that the user can see it, while the console will print in the console when using inspect to see the code behind the page
@@ -159,3 +159,5 @@ $(document).ready(function(){
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
+
+Added code to html file: lines 24-25
